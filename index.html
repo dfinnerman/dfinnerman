@@ -6,35 +6,74 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Danielle Finnerman Home</title>
     <link href="css/styles.css" rel="stylesheet">
-</head>
-<body>
-   <header>
-    <nav>
-        <ul>
-          <li class="logo">
-            <a href="index.html">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles&family=Lato&family=Open+Sans:wght@300&family=Poppins:wght@700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles&family=Lato&family=Open+Sans:wght@300&family=Poppins:wght@700&display=swap');
+  </style>
+<script>
+    const hamburger = document.querySelector(".hamburger");
+const navMenu = document.querySelector(".nav-menu");
+
+hamburger.addEventListener("click", mobileMenu);
+
+function mobileMenu() {
+    hamburger.classList.toggle("active");
+    navMenu.classList.toggle("active");
+}
+</script>
+<script>
+const hamburger = document.querySelector(".hamburger");
+const navMenu = document.querySelector(".nav-menu");
+
+hamburger.addEventListener("click", mobileMenu);
+
+function mobileMenu() {
+    hamburger.classList.toggle("active");
+    navMenu.classList.toggle("active");
+}
+  </script>
+  </head>
+   <header class="header">
+    <nav class="navbar">
+            <a href="index.html" class="nav-logo">
               <img src="media/logo.png" alt="Danielle Finnerman signature. Click for home." /></a>
-          </li>
-          <li>
-            <a href="about.html">
+          <ul class="nav-menu">
+          <li class="nav-item">
+            <a href="about.html" class="about-button">
               About</a>
           </li>
-          <li>
-            <a href="designs.html">
+          <li class="nav-item">
+            <a href="designs.html" class="designs-button">
               Designs</a>
           </li>
-          <li>
-            <a href="art.html">Art</a>
+          <li class="nav-item">
+            <a href="art.html" class="art-button">Art</a>
           </li>
-          <li>
-            <a href="resume.html">Resume</a>
+          <li class="nav-item">
+            <a href="resume.html" class="resume-button">Resume</a>
           </li>
-          <li>
-            <a href="contact.html">
+          <li class="nav-item">
+            <a href="contact.html" class="contact-button">
               Contact</a>
-          </li>
-        </ul>
+      </li>
+      <li class="linkedin">
+        <a href="https://www.linkedin.com/in/danielle-finnerman/" target="_blank">
+          <img src="media/LI-In-Bug.png" alt="Linkedin logo. click to go to linkedin profile"/>
+        </a>
+        </li>
+  
+      </ul>
+          
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
       </nav>
    </header> 
+   <body>
 </body>
 </html>
