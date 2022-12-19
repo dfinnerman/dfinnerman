@@ -5,8 +5,16 @@
     box-sizing: border-box;
 }
 html{
+    font-size: 85%;
     font-family: 'Fuzzy Bubbles', cursive;
 }
+.container{
+    background-image: url("/media/background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #ffffff;
+}
+
 li {
     list-style: none;
 }
@@ -100,11 +108,22 @@ nav img {
     color: #ffffff;
     background-color: #C68089;
 } 
+footer{
+    margin-top: 5rem;
+    text-align: center;
+}
+article{
+    padding: 5rem;
+}
+.contact-info{
+    text-align: center;
+    margin-top: 5rem;
+}
 @media only screen and (max-width: 768px) {
     .nav-menu {
         position: fixed;
         left: -100%;
-        top: 5rem;
+        top: 15rem;
         flex-direction: column;
         background-color: #fff;
         width: 100%;
@@ -118,13 +137,9 @@ nav img {
     .nav-menu.active {
         left: 0;
     }
-
-/* navitem */
 .nav-item {
     margin: 2.5rem 0;
 }
-  
-/* end navitem */
     .hamburger {
         display: block;
         cursor: pointer;
@@ -144,105 +159,3 @@ nav img {
 
 }
 
-/* html {
-    box-sizing: border-box;
-}
-
-*,
-*::before,
-*::after {
-    box-sizing: inherit;
-} */
-/* Body */
-
-/* navbar */
-/* 
-nav {
-    margin: 0 1rem;
-}
-
-nav ul {
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-}
-
-nav a {
-    font-weight: bold;
-    text-decoration: none;
-    padding: .5rem 1rem;
-    display: block;
-    color: #000000;
-    border-radius: 10px;
-    margin: 0 0 2rem 0;
-    text-align: center;
-}
-.about-button a{
-    color: #48BEFF;
-}
-.design-button a{
-    color: #011638;
-}
-.art-button a{
-    color: #8A1F28;
-}
-.resume-button a{
-    color: #93B48B;
-}
-.contact-button a{
-    color: #5B5F97;
-}
-nav a:hover {
-    color: #ffffff;
-    background-color: black;
-}
-nav img {
-    max-width: 350px;
-}
-.logo{
-    box-shadow: 5px 5px 5px 5px  #C68089;
-    height: 140px;
-}
-.linkedin img{
-    max-width: 25px;
-}
-
-nav .logo a {
-    background-color: transparent;
-    margin: 0;
-    
-}
-@media (min-width: 550px) {
-    nav {
-        margin-left: 0;
-    }
-    nav ul {
-        display: flex;
-        flex-flow: row wrap;
-        gap: 1rem;
-        justify-content: center;
-    }
-    nav a {
-        margin: 0 0 3rem 0;
-    }
-    .logo {
-        flex-basis: 100%;
-        text-align: center;
-    }
-}
-@media (min-width: 900px) {
-    nav ul {
-        justify-content: flex-start;
-    }
-    nav a {
-        margin-top: 5rem;
-    }
-    .logo {
-        flex-basis: auto;
-        margin-right: auto;
-    }
-    .flexrow2 figure {
-        flex-basis: 20%;
-        grid-template-rows: 2fr 0.2fr;
-    }
-} */
