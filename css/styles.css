@@ -29,7 +29,7 @@ html{
     align-items: center;
 }
 .container-p-box{  
-    height:fit-content;
+    /* height:fit-content; */
     background-color: rgb(1,22,56);opacity: 70%;
 }
 
@@ -138,6 +138,18 @@ article{
     margin-top: 5rem;
 }
 @media only screen and (max-width: 768px) {
+    .container{
+        display: flex;
+        flex-flow:column;
+        align-items: center;
+    }
+    .container img{
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+    .container-p-box p{
+        font-size: small;
+    }
     .nav-menu {
         position: fixed;
         left: -100%;
@@ -156,7 +168,7 @@ article{
         left: 0;
     }
 .nav-item {
-    margin: 2.5rem 0;
+    margin: 1.5rem 0;
 }
     .hamburger {
         display: block;
@@ -174,15 +186,7 @@ article{
     .hamburger.active .bar:nth-child(3) {
         transform: translateY(-8px) rotate(-45deg);
     }
-    .container{
-        display: flex;
-        flex-flow:column;
-        align-items: center;
-    }
-    .container img{
-        margin-top: 2rem;
-        margin-bottom: 2rem;
-    }
+   
 
 }
 
