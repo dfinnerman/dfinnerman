@@ -18,10 +18,8 @@ html{
     
 }
 .container img{
-    
     max-width: 50%;
     height: auto;
-
 }
 .container p{
     color: #ffffff;
@@ -29,6 +27,10 @@ html{
     padding: 5rem;
     justify-content: center;
     align-items: center;
+}
+.container-p-box{  
+    height:fit-content;
+    background-color: rgb(1,22,56);opacity: 70%;
 }
 
 li {
@@ -179,6 +181,7 @@ article{
     }
     .container img{
         margin-top: 2rem;
+        margin-bottom: 2rem;
     }
 
 }
