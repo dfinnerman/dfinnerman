@@ -9,10 +9,16 @@ html{
     font-family: 'Fuzzy Bubbles', cursive;
 }
 .container{
-    background-image: url("/media/background.png");
+    background-image: url("../media/background.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
     background-color: #ffffff;
+}
+.container img{
+    padding: 5rem;
+}
+.container p{
+    color: #ffffff;
 }
 
 li {
